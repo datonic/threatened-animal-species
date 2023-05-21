@@ -9,7 +9,7 @@ resources:
   - name: threatened-species
     type: table
     path: data/threatened-species.csv
-    archiveCID: bafy
+    archiveCID: bafybeif5reawvqtsoybj5fhdl4ghaq3oc7kzepuws26zawkjm4johlv3uq
     scheme: file
     format: csv
     mediaType: text/csv
