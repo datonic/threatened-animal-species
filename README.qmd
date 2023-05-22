@@ -1,0 +1,28 @@
+---
+format: gfm
+execute:
+  echo: false
+---
+
+# Threatened Animal Species
+
+[![](https://github.com/datonic/threatened-animal-species/actions/workflows/ci.yaml/badge.svg)](https://github.com/datonic/threatened-animal-species/actions/workflows/ci.yaml)
+
+Dataset covering [IUCN Red List of Threatened Animal Species](https://www.iucnredlist.org/).
+
+## Data
+
+### Sample
+
+```{python}
+import pandas as pd
+
+df = pd.read_csv("data/threatened-species.csv")
+df.sample(5)
+```
+
+### Plot
+
+```{python}
+_ = df.groupby("category").size().plot.bar()
+```
